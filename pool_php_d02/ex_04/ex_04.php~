@@ -1,0 +1,29 @@
+<?php
+function my_password_hash($password){
+    $salt = (rand(1000, 10000));
+    $hash = md5($salt . $password);
+    $hashed_password["hash"] = $hash;
+    $hashed_password["salt"] = $salt;
+    print_r($hashed_password);
+    return $hashed_password;
+
+    echo my_password_verify($password, $salt, $hash);
+}
+
+function my_password_verify($password, $salt, $hash){
+    $check = md5($salt . $password);
+    if ($check == $hash){
+        echo "bien";
+        return "bien";
+    }
+    else{
+        echo "faux";
+        return "faux";
+    }
+}
+
+$tab = my_password_hash("olivier");
+my_password_verify("olivier", $tab["salt"], $tab["hash"]);
+//echo my_password_verify($password, $tabsalt, $hash);
+
+?>

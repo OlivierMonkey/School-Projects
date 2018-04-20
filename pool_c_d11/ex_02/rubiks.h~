@@ -1,0 +1,18 @@
+#ifndef RUBIKS_H_
+#define RUBIKS_H_
+//#define MAGIC_SQR_DBG_ 0xADe4Db33
+
+int my_putchar(char c);
+
+int my_putstr(char *str);
+
+int my_strlen(char *str);
+
+void print_tab(int **table);
+
+int check_square(int **table);
+
+int **init_tab();
+
+
+#endif

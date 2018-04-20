@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if session.logged_in %}
+<a href="{{ url_for('show_users') }}">show users</a>
+<a href="{{ url_for('add_user') }}">add user</a>
+{% endif %}
+
+{% endblock %}

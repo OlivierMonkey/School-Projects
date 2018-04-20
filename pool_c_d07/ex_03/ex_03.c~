@@ -1,0 +1,83 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <fcntl.h>
+
+int my_putchar(char c)
+{
+  write(1, &c, 1);
+}
+
+int my_putstr(char *str)
+{
+  int i;
+
+  i = 0;
+  while (str[i])
+    {
+      my_putchar(str[i]);
+      i++;
+    }
+}
+
+int my_strlen(char *str)
+{  
+  int count;
+
+  count = 0;
+  while ( str[count] != '\0' )
+    {     
+      count++;
+    }
+  // printf("%d\n", count);
+  return (count);
+}
+
+char *my_strcpy(char *dest, char *src)
+{
+  int i;
+
+  i = 0;
+  while (src[i] != '\0')
+    {
+      dest[i] = src[i];
+      i++;
+    }
+  return (dest);
+}
+
+int main(int argc, char **argv)
+{
+  int i;
+  int fd;
+  int size;
+  int ret;
+  char *mem;
+
+  printf("%d\n", argc);
+  
+  i = 2;
+  fd = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, S_IRWXU);
+  if (fd == -1)
+    {
+      my_putstr("Error.");
+      my_putchar('\n');
+      return(1);
+    }
+  if (argc >= 3)
+    {
+      while (argv[i] != NULL)
+	{
+	  size = my_strlen(argv[i]);
+	  ret = write(fd, argv[i], size);
+	  ret = write(fd, "\n", 1);
+	  i++;
+	}
+    }
+  else
+    {
+      my_putstr("Error.");
+      my_putchar('\n');
+    }
+  close(fd);
+  return(0);
+}

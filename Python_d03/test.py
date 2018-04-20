@@ -1,0 +1,16 @@
+import Calculator
+
+#print(dir(Calculator))
+#Calculator.welcome()
+Calculator.calculate()
+#print(Calculator.add(2, 5))
+#Calculator.sub()
+#Calculator.multiply()
+#Calculator.division()
+#Calculator.power()
+#Calculator.cosinus()
+#Calculator.sinus()
+# Calculator.tangent()
+# Calculator.exponentiel()
+# Calculator.logarythm()
+# Calculator.again()

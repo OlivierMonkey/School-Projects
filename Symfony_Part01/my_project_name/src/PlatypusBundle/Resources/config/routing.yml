@@ -1,0 +1,15 @@
+platypus_homepage:
+    path:     /
+    defaults: { _controller: PlatypusBundle:Default:index }
+
+show:
+    path:     /{type}/show/{id}
+    defaults: { _controller: PlatypusBundle:Checker:show }
+    requirements:
+     type: "Platypus|Human|Gecko"
+     id: "[0-9]*"
+
+show_params:
+    path:	/Checker/showParams/	
+    defaults: { _controller: PlatypusBundle:Checker:showParams }
+    methods: [GET]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <menu>
+    <ul id="navigation">
+      <li><a href="sql.html">SQL</a></li>
+      <li><a href="php.html">PHP</a></li>
+      <li><a href="index.html">INDEX</a></li>
+    </ul>
+  </menu>
+
+  <main>
+
+    <header>
+    </header>
+
+    <section id="description">
+    </section>
+
+    <section id="empty">
+    </section>
+
+    <section id="comments">
+    </section>
+
+    <section id="examples">
+    </section>
+
+    <aside>
+      <p>
+	Peace is a lie, there is only passion,
+	Through passion, I gain strength,
+	Through strength, I gain power,
+	Through power, I gain victory,
+	Through victory, my chains are broken,
+	The Force shall free me.
+      </p>
+    </aside>
+    
+  </main>
+
+  <footer>
+    <p>Olivier - Routier - adresse - tel number</p>
+  </footer>
+  
+</html>

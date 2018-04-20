@@ -1,0 +1,31 @@
+//#include <stdio.h>
+
+int my_getnbr(char *str)
+{
+  int sign;
+  int res;
+
+  sign = 1;
+  res = 0;
+  while (*str == '-' || *str == '+')
+    {
+      if (*str == '-')
+	{
+	  sign = sign * -1;
+	}
+      str++;
+    }
+  while (*str >= '0' && *str <= '9')
+    {
+      res = (res * 10) + (*str - '0');
+      str++;
+    }
+  res = res * sign;
+  return (res);
+}
+
+/*int main()
+{
+  printf("\"%s\" returns %d\n", "--42", my_getnbr("--42"));
+  
+  }*/

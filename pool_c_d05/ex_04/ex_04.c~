@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+char my_putchar(char c)
+{
+  write (1, &c, 1);
+}
+
+/*int my_putstr(char *str)
+{
+  int i;
+
+  i = 0;
+  while (str[i] != '\0')
+    {
+      my_putchar(str[i]);
+      i++;
+    }
+}*/
+
+int my_strlen(char *str)
+{  
+  int count;
+
+  count = 0;
+  while ( str[count] != '\0' )
+    {     
+      count++;
+    }
+  // printf("%d\n", count);
+  return (count);
+}
+
+char *my_strupcase(char *str)
+{
+  int i;
+  int j;
+  
+  i = 0;
+  while (i < my_strlen(str))
+    {
+      str[i] = str[i] - 32;
+      //my_putchar(str[i]);      
+      i++;
+    }
+  return (str);
+}
+
+int main()
+{
+  char str[6] = "hello";
+  my_strupcase(str);
+  //printf("%s\n", my_strupcase(str));
+  return (0);
+}
+

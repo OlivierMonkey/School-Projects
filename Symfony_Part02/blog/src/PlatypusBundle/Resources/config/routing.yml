@@ -1,0 +1,43 @@
+platypus_post:
+    resource: "@PlatypusBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+platypus_homepage:
+  path:     /
+  defaults: { _controller: PlatypusBundle:User:index }
+
+show:
+  path:     /{type}/show/{id}
+  defaults: { _controller: PlatypusBundle:Checker:show }
+  requirements:
+    type: "Platypus|Human|Gecko"
+    id: "[0-9]*"
+
+show_params:
+  path: /Checker/showParams/	
+  defaults: { _controller: PlatypusBundle:Checker:showParams }
+  methods: [GET]
+    
+platypus_index:
+  path:     /index
+  defaults: { _controller: PlatypusBundle:User:index }
+
+register:
+  path: /register
+  defaults: { _controller: PlatypusBundle:User:register }
+  
+login:
+  path: /login
+  defaults: { _controller: PlatypusBundle:User:login }
+
+logout:
+  path: /logout
+
+edit:
+  path: /edit
+  defaults: { _controller: PlatypusBundle:User:userEdit }
+
+platypus_post:
+  resource: "@PlatypusBundle/Ressources/config/routing/post.yml"
+  prefix: /post
+

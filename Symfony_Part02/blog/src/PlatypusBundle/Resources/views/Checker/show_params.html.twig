@@ -1,0 +1,28 @@
+{% extends "PlatypusBundle:Default:layout.html.twig" %}
+
+{% block title %}PlatypusBundle:Checker:showParams{% endblock %}
+
+{% block main %}
+
+<table>
+
+  {% for key, value in get %}
+  <tr> 
+    <td> {{key}} </td>
+    <td> {{value}} </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+{% if app.environment == "dev" %}
+{{get|length}}
+{% endif %}
+
+
+
+<link rel="stylesheet" href="{{ asset('bundles/css/table.css') }}" />
+
+
+
+{% endblock %}

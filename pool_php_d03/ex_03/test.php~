@@ -1,0 +1,13 @@
+<?php
+
+include_once("Gecko.php");
+
+$thomas = new Gecko("Thomas");
+$annonymus = new Gecko();
+$serguei = new Gecko("Serguei");
+
+unset($serguei);
+//echo $thomas->name;
+echo $thomas->getName();
+//echo $annonymus->name . "\n";
+?>

@@ -1,0 +1,24 @@
+PlatypusBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: PlatypusBundle\Repository\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+            unique: true
+        content:
+            type: text
+        creationDate:
+            type: datetime
+            column: creation_date
+        modificationDate:
+            type: datetime
+            column: modification_date
+    lifecycleCallbacks: {  }

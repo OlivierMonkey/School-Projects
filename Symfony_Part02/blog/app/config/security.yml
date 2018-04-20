@@ -1,0 +1,63 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+
+  encoders:
+    PlatypusBundle\Entity\User:
+      algorithm: bcrypt
+
+  role_hierarchy:
+    ROLE_USER: ROLE_USER
+    ROLE_BLOGGER: [ROLE_USER, ROLE_BLOGGER]
+    ROLE_ADMIN: [ROLE_USER, ROLE_BLOGGER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+    
+  providers:
+    from_db:
+      entity:
+        class: PlatypusBundle\Entity\User
+        property: username
+    # users:
+    #   user: { password: userpass, roles: ['ROLE_USER'] }
+    #   admin: { password: adminpass, roles: ['ROLE_ADMIN'] }
+
+  firewalls:
+    # disables authentication for assets and the profiler, adapt it according to your needs
+    dev:
+      pattern: ^/(_(profiler|wdt)|css|images|js)/
+      security: false
+
+    main:
+      anonymous: ~
+      form_login:
+        login_path: login
+        check_path: login
+        default_target_path: login
+        always_use_default_target_path: true
+      logout:
+        path: logout
+        target: platypus_homepage
+      pattern:    ^/
+      http_basic: ~
+      provider: from_db
+      remember_me:
+        secret: '%secret%'
+        lifetime: 120
+        path: /
+      
+  access_control:
+    - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/login, roles: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_REMEMBERED] }
+    - { path: ^/user/list, roles: ROLE_USER }
+    - { path: "^/user/{id}/edit", roles: ROLE_ADMIN }
+    - { path: "^/user/{id}/delete", roles: ROLE_ADMIN }
+
+      # activate different ways to authenticate
+      
+      # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+      #http_basic: ~
+          
+      # https://symfony.com/doc/current/security/form_login_setup.html
+      #form_login: ~
+

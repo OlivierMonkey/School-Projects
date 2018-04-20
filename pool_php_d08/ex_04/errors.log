@@ -1,0 +1,102 @@
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:11
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(11): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(22): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(22): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(21): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(21): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', '3306')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(21): connect_db('localhost', 'root', '3306', 'coding', NULL)
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:14
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(14): PDO->__construct('mysql:host=loca...', 'root', '3306')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(26): connect_db('localhost', 'root', '3306', 'coding', NULL)
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(30): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', '3306')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(30): connect_db('localhost', 'root', '3306', 'coding', NULL)
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(30): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(31): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<Bad params! Usage:php connect_db.php host username password port db>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:9
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(9): PDO->__construct('mysql:host=loca...', 'root', 'passwd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(32): connect_db('localhost', 'root', 'passwd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>

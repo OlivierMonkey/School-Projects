@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+ {% include("PlatypusBundle:Default:header.html.twig") %}
+ {% block main %}
+{% endblock %}
+<a href="{{ path('platypus_homepage') }}">Index</a>
+{% if is_granted('ROLE_USER') %}
+<a href="{{ path('logout') }}">Log out</a>
+{% endif %}
+
+  {% include("PlatypusBundle:Default:footer.html.twig") %}
+{% endblock %}

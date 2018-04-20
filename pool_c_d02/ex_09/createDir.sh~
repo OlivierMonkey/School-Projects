@@ -1,0 +1,4 @@
+#!/bin/bash
+
+while 
+mkdir ex_0$1 

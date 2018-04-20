@@ -1,0 +1,3 @@
+SELECT COUNT(*) "Number of members",
+       FLOOR(AVG(TIMESTAMPDIFF(YEAR, birthdate, NOW()))) "Average age"
+FROM   profiles;

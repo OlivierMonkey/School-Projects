@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+<a href="{{ url_for('show_users') }}">show users</a>
+<a href="{{ url_for('add_user') }}">add user</a>
+<a href="{{ url_for('update_user') }}">update user</a>
+<a href="{{ url_for('delete_user') }}">delete user</a>
+<p>hello</p>
+{% endblock %}

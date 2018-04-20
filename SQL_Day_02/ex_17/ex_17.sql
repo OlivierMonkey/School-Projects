@@ -1,0 +1,10 @@
+UPDATE movies AS m,
+       (SELECT producers.id, COUNT(movies.title)
+       FROM    producers, movies
+       WHERE   (producers.id = movies.producer_id)
+       	       && (producers.name LIKE "%film")
+	GROUP BY id
+	ORDER BY COUNT(movies.title)
+	LIMIT 1) AS p
+SET	m.producer_id = p.id
+WHERE	m.producer_id IS NULL;

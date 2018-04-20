@@ -1,0 +1,26 @@
+{% extends "PlatypusBundle:Default:layout.html.twig" %}
+
+{% block title %}PlatypusBundle:User:register{% endblock %}
+
+{% block main %}
+
+
+<h1> enregistrer </h1>
+
+ {{ form_start(form) }}
+ {{ form_widget(form) }}
+ {{ form_end(form) }}
+ 
+ {% if app.session is not null and app.session.started %}
+{% for message in app.session.flashbag.get('success') %}
+<p> {{ message }} </p>
+{% endfor %}
+
+{% else %}
+{% for message in app.session.flashbag.get('failure') %}
+<p> {{ message }} </p>
+{% endfor %}
+{% endif %}
+
+ 
+{% endblock %}

@@ -1,0 +1,21 @@
+p1{
+    font-size:21;
+    background-color:black;
+    color:white;
+}
+
+p2{
+    font-size:27;
+    background-color:white;
+    color:black;
+    
+}
+
+body{
+    background-color:yellow;
+}
+
+.blood {
+    color:red;
+    font-style:italic;
+}

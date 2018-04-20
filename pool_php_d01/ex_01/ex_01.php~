@@ -1,0 +1,13 @@
+<?php
+$int = 42;
+$float = 42.42;
+$bool = true;
+$string = "forty two";
+$NULL;
+
+echo $int;
+echo $float;
+echo $bool;
+echo $string;
+    
+?>

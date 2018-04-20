@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /Home/olivier/Rendu/pool_c_d02/ex_05/$1

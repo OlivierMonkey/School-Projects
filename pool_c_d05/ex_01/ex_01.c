@@ -1,0 +1,24 @@
+//#include <stdio.h>
+
+int array_sum(int *tab, int size)
+{
+  int i;
+  int res;
+  
+  i = 0;
+  res = 0;
+  while (i < size)
+  {
+    res = res + tab[i];
+    i++;
+  }
+  return(res);
+}
+
+/*int main()
+{
+  int tab[5] = {3, 4, 5};
+
+  printf("%d\n", array_sum(tab, 3));
+  return (0);
+  }*/

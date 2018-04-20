@@ -1,0 +1,17 @@
+{% extends "PlatypusBundle:Default:layout.html.twig" %}
+
+{% block title %}PlatypusBundle:Checker:show{% endblock %}
+
+{% block main %}
+
+{% if id == NULL %}
+<p>Greetings, great {{type}}</p>
+{% else %}
+<p>Greetings, great {{type}}{{id}}</p> 
+{% endif %}
+
+{% if type == "Platypus" %}
+<p> I salute you, Ô great master.</p>
+{% endif %}
+
+{% endblock %}

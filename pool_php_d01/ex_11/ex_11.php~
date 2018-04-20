@@ -1,0 +1,7 @@
+<?php
+function my_print_args(...$tableau){
+    foreach($tableau as $value){
+        echo "value \n";
+    }
+}
+?>

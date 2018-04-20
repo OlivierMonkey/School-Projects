@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="codingpedia.css">
+  </head>
+  
+  <body>   
+
+    <header>
+      <h1>Welcome to CodingPedia</h1>
+
+      <nav>
+	<ul>
+	  <li><a href="sql.html">SQL</a></li>
+	  <li><a href="php.html">PHP</a></li>
+	  <li><a href="index.html">INDEX</a></li>
+	  <li><a href="codingpedia.css">CSS</a></li>
+	</ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+	<p>CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multilingual which functions as a wiki. CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.</p>
+
+	<p>I am 'login', currently a student at the coding-academy, and I love to stay in the pool all day long.</p>
+      </section>
+
+      <section>
+	<form id="someform">
+	  <label>Name:</label>
+	  <input type="text" id="name" required="true" /><br>
+
+	  <label>First name:</label>
+	  <input type="text" id="firstname" required="true" /><br>
+
+	  <label>Email:</label>
+	  <input type="email" id="email" required="true" /><br>
+
+	  <label>Age:</label>
+	  <input type="number" id="age" min="3" max="99" /><br>
+
+	  <label>Phone:</label>
+	  <input type="tel" id="phone" maxlength="10"/><br>
+
+	  <label>Sex:</label>
+	  <input type="radio" id="radio" name="gender" value="male" checked/> Male
+	  <input type="radio" name="gender" value="female"/> Female<br>
+
+	  <label>Hair color:</label>
+	  <input type="color" name="haircolor" value="#000000"/><br>
+
+	  <label>Date:</label>
+	  <input type="datetime-local" name="today" value="2017-06-28"/><br>
+
+	  <label>Technology:</label>
+	  <select name="technologies" size="1" multiple>
+	    <option value="php">PHP</option>
+	    <option value="sql">SQL</option>
+	    <option value="html">HTML</option>
+	  </select></br>
+
+	  <label>Question:</label>
+	  <textarea name="question" id="question" cols="40" rows="3"></textarea><br>
+	  <input type="submit" value="Submit"><br>
+	  
+      </section>
+      
+
+    </main>
+
+    <aside>
+      <cite>
+	Une courte description de moi et de ce que je fais ici à la coding academy.
+      </cite>
+    </aside>
+
+    <footer>
+      <address>Olivier - Routier - adresse - tel number</address>
+    </footer>
+
+  </body>
+
+</html>

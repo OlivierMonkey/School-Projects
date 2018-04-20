@@ -1,0 +1,17 @@
+<?php
+function my_division_modulo($fistNumber, $operChar, $secondNumber)
+{
+    if (($operChar != "/") || (!is_numeric($fistNumber)) || (!is_numeric($secondNumber)))
+        {
+            echo "The given arguments aren't good.\n";
+            return NULL;
+        }
+    else
+        {
+            $result = floor($fistNumber / $secondNumber);
+            return $result;
+        }
+}
+
+echo my_division_modulo(3, "/" , 4);
+?>

@@ -1,0 +1,10 @@
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php:13
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php(13): PDO->__construct('mysql:host=loca...', 'root', 'dbpass')
+#1 /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php(22): connect_db('localhost', 'root', 'dbpass', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php:13
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php(13): PDO->__construct('mysql:host=loca...', 'root', 'dbpass')
+#1 /home/olivier/Rendu/pool_php_d08/ex_03/db_pdo.php(22): connect_db('localhost', 'root', 'dbpass', '3306', 'coding')
+#2 {main}>storage in<error_log_file>

@@ -1,0 +1,14 @@
+<?php
+class Gecko
+{
+    public $name;
+    
+    public function __construct($name = "")
+    {
+        if ($name == "")
+            echo "Hello !\n";
+        else
+            echo "Hello " . $this->name = $name . " !\n";
+        
+    }
+}

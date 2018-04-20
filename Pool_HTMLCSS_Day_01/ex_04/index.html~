@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <menu>
+  </menu>
+
+  <body>
+    <h1>Welcome to CodingPedia</h1>
+
+    <a href="php.html">PHP</a>
+    <a href="sql.html">SQL</a>
+    
+    <p>CodingPedia is a collective encyclopedia project on the Internet aiming to be universal and multilingual which functions as a wiki. CodingPedia has for goal to offer freely reusable objective and verifiable content that anyone can modify and improve.</p>
+
+    <p>I am 'login', currently a student at the coding-academy, and I love to stay in the pool all day long.</p>
+    
+    <main>
+    </main>
+    
+  </body>
+
+  <aside>
+  </aside>
+
+  <footer>
+    <p>Olivier</p>
+    <p>Routier</p>
+    <p>adresse</p>
+    <p>tel number</p>
+  </footer>
+  
+</html>

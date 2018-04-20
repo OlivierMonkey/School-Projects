@@ -1,0 +1,13 @@
+{% extends "PlatypusBundle:Default:layout.html.twig" %}
+
+{% block title %}PlatypusBundle:User:edit{% endblock %}
+
+{% block main %}
+
+<h1> edit </h1>
+
+{{ form_start(form) }}
+ {{ form_widget(form) }}
+ {{ form_end(form) }}
+
+{% endblock %}

@@ -1,0 +1,5 @@
+PDO ERROR:<exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php:7
+Stack trace:
+#0 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(7): PDO->__construct('mysql:host=loca...', 'root', 'dbpasswd')
+#1 /home/olivier/Rendu/pool_php_d08/ex_04/connect_db.php(18): connect_db('localhost', 'root', 'dbpasswd', '3306', 'coding')
+#2 {main}>storage in<error_log_file>
